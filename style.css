@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: #ffeebb;
+}
+body > hr {
+  width: 80%;
+}
+h1 {
+  font-family: 'Righteous', cursive;
+  color: black;
+  font-size: 2.5rem;
+}
+h1 {
+  font-style: italic;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  display: flex;
+  min-height: 20rem;
+  padding: 1rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.mt-3 {
+  margin-top: 3px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+#heroes,
+#introduction,
+#projects,
+#about-me,
+#contact-me {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+/* heroes */
+#heroes > .container {
+  background-image: url('./images/spidey.png');
+  background-size: 9rem;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+#heroes p {
+  font-size: 1.5rem;
+}
+
+/* introduction */
+#introduction img {
+  border-radius: 10%;
+  height: 200px;
+}
+#introduction > .container {
+  align-items: center;
+  padding-top: 2rem;
+}
+
+/* projects */
+#projects ul {
+  justify-content: space-around;
+}
+#projects > .container img {
+  height: 150px;
+  border: 1px solid black;
+}
+
+/* about-me */
+#about-me > .container {
+  justify-content: flex-start;
+  min-height: fit-content;
+}
+#about-me ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#about-me li {
+  padding: 5px;
+  border: 1px solid #d7c0ae;
+  border-radius: 40%;
+  background-color: #d7c0ae;
+  color: black;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+#about-me li:nth-child(2n + 0) {
+  border: 1px solid #ffc26f;
+  border-radius: 40%;
+  background-color: #ffc26f;
+  color: black;
+}
+#about-me li:nth-child(3n + 0) {
+  border: 1px solid #967e76;
+  border-radius: 40%;
+  background-color: #967e76;
+  color: whitesmoke;
+}
+
+/* contact-me */
+#contact-me .container {
+  min-height: fit-content;
+  padding: 2px;
+}
+#contact-me ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+#contact-me ul li {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact-me img {
+  height: 20px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+@media (max-width: 1239px) {
+  #projects ul {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 749px) {
+  #contact-me ul {
+    flex-direction: column;
+  }
+  #contact-me ul li {
+    margin-top: 3px;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  #heroes p {
+    font-size: inherit;
+  }
+}
